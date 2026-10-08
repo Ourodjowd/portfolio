@@ -81,7 +81,8 @@ export const PROJECTS = [
     description: "Developed an automated CV ranking system that parses applicant resumes and ranks them based on job description requirements. Applied LP techniques to extract key features and compute similarity scores for fair candidate evaluation.",
     features: ["Parses applicant resumes", "Computes similarity scores"],
     tech: ["Python", "Machine Learning", "Scikit-learn", "NLP"],
-    github: "#"
+    github: "#",
+    illustration: "/projects/ranking_cv.jpg"
   },
   {
     id: "p2",
@@ -91,7 +92,8 @@ export const PROJECTS = [
     description: "Created an AI-powered multiple-choice question generator from input text or documents. Designed to assist educators by generating meaningful questions and distractors using NLP-based summarisation and keyword extraction.",
     features: ["Generates meaningful questions", "Extracts keywords & summarises"],
     tech: ["Python", "NLP", "Transformers", "NLTK", "Streamlit"],
-    github: "#"
+    github: "#",
+    illustration: "/projects/mcq_generator.jpg"
   },
   {
     id: "p3",
@@ -101,7 +103,8 @@ export const PROJECTS = [
     description: "Designed an intelligent terminal interface that assists users with commands, suggests optimisations, and automates repetitive shell tasks. Integrated AI to provide explanations of commands and error debugging in real-time.",
     features: ["Suggests optimisations", "Automates shell tasks", "Provides AI explanations"],
     tech: ["Python", "Bash", "OpenAI API", "Shell Scripting"],
-    github: "#"
+    github: "#",
+    illustration: "/projects/smart_terminal.jpg"
   },
   {
     id: "p4",
@@ -111,7 +114,8 @@ export const PROJECTS = [
     description: "Developed a secure and efficient attendance management system where students scan unique QR codes to record their presence. Implemented real-time verification, automated data logging, and analytics features to reduce manual errors and save administrative time. Enhanced system reliability with role-based access and a clean dashboard for monitoring attendance trends.",
     features: ["Real-time verification", "Automated data logging", "Role-based access", "Clean dashboard"],
     tech: ["Python", "Node.js"],
-    github: "#"
+    github: "#",
+    illustration: "/projects/qr_attendance.jpg"
   }
 ];
 

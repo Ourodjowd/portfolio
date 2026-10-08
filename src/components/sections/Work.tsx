@@ -79,24 +79,34 @@ export default function Work() {
                     </div>
                     
                     {/* Illustrative UI Panel */}
-                    <div className="hidden md:flex flex-1 bg-[var(--soft)] p-8 items-center justify-center relative overflow-hidden">
-                      <div className="absolute top-4 right-6 text-[10px] uppercase tracking-widest text-[var(--mute)] font-[family-name:var(--font-mono)]">
+                    <div className="hidden md:flex flex-1 bg-[var(--soft)] p-6 items-center justify-center relative overflow-hidden">
+                      <div className="absolute top-4 right-6 text-[10px] uppercase tracking-widest text-[var(--mute)] font-[family-name:var(--font-mono)] z-10">
                         Illustrative UI
                       </div>
-                      
-                      {/* Wireframe Graphic */}
-                      <div className="w-full max-w-[340px] aspect-square bg-white rounded-xl border border-[var(--line)] shadow-sm p-4 flex flex-col gap-4 animate-in fade-in slide-in-from-right-8 duration-700">
-                         <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
-                           <div className="w-24 h-4 bg-[var(--soft)] rounded"></div>
-                           <div className="w-8 h-4 bg-[var(--soft)] rounded"></div>
-                         </div>
-                         <div className="flex-1 flex gap-4">
-                           <div className="w-1/3 flex flex-col gap-2">
-                             {[1,2,3,4].map(i => <div key={i} className="w-full h-8 bg-[var(--paper)] rounded"></div>)}
-                           </div>
-                           <div className="w-2/3 bg-[var(--paper)] rounded-md border border-[var(--line)]"></div>
-                         </div>
-                      </div>
+
+                      {/* Project Illustration */}
+                      {project.illustration ? (
+                        <div className="w-full h-full max-w-[420px] max-h-[420px] rounded-2xl overflow-hidden border border-[var(--line)] shadow-lg animate-in fade-in slide-in-from-right-8 duration-700">
+                          <img
+                            src={project.illustration}
+                            alt={`${project.title} UI illustration`}
+                            className="w-full h-full object-cover object-top"
+                          />
+                        </div>
+                      ) : (
+                        <div className="w-full max-w-[340px] aspect-square bg-white rounded-xl border border-[var(--line)] shadow-sm p-4 flex flex-col gap-4 animate-in fade-in slide-in-from-right-8 duration-700">
+                          <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
+                            <div className="w-24 h-4 bg-[var(--soft)] rounded"></div>
+                            <div className="w-8 h-4 bg-[var(--soft)] rounded"></div>
+                          </div>
+                          <div className="flex-1 flex gap-4">
+                            <div className="w-1/3 flex flex-col gap-2">
+                              {[1,2,3,4].map(i => <div key={i} className="w-full h-8 bg-[var(--paper)] rounded"></div>)}
+                            </div>
+                            <div className="w-2/3 bg-[var(--paper)] rounded-md border border-[var(--line)]"></div>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 )}
