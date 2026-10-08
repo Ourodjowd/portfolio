@@ -40,7 +40,8 @@ export default function Experience() {
     <section
       ref={sectionRef}
       id="experience"
-      className="relative w-full px-[var(--gutter)] py-[clamp(96px,14vh,160px)] bg-[var(--paper)]"
+      className="relative w-full px-[var(--gutter)] py-[clamp(96px,14vh,160px)]"
+      style={{ background: 'var(--paper-glass)', backdropFilter: 'blur(2px)' }}
     >
       <div className="max-w-[1320px] mx-auto">
         <div className="mb-16 rv">

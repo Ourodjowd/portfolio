@@ -7,12 +7,12 @@ export default function Skills() {
   const [activeFamily, setActiveFamily] = useState<string | null>(null);
   const [inspectedSkill, setInspectedSkill] = useState<any | null>(null);
 
-  const allSkills = SKILL_GROUPS.flatMap(group => 
+  const allSkills = SKILL_GROUPS.flatMap(group =>
     group.skills.map((s, index) => ({ ...s, family: group.family, index: index + 1 }))
   );
 
   return (
-    <section id="skills" className="relative w-full py-[var(--gutter)] px-[var(--gutter)] min-h-screen bg-[var(--paper)]">
+    <section id="skills" className="relative w-full py-[var(--gutter)] px-[var(--gutter)] min-h-screen" style={{ background: 'var(--paper-glass)', backdropFilter: 'blur(2px)' }}>
       <div className="max-w-[1320px] mx-auto">
         <div className="mb-16">
           <div className="text-sm font-[family-name:var(--font-mono)] text-[var(--mute)] mb-4">
@@ -28,7 +28,7 @@ export default function Skills() {
           <div className="flex-1">
             {/* Filter chips */}
             <div className="flex flex-wrap gap-2 mb-8">
-              <button 
+              <button
                 onClick={() => setActiveFamily(null)}
                 className={`px-4 py-2 rounded-full text-xs font-medium transition-all ${!activeFamily ? 'bg-[var(--ink)] text-white' : 'border border-[var(--line)] text-[var(--mute)] hover:bg-black/5'}`}
               >
@@ -81,7 +81,7 @@ export default function Skills() {
                 <div className="inline-block px-3 py-1 rounded-full bg-[var(--soft)] text-xs font-medium mb-6">
                   {inspectedSkill.family}
                 </div>
-                
+
                 <p className="text-sm text-[var(--mute)]">
                   Hover over the elements in the table to inspect their properties.
                 </p>

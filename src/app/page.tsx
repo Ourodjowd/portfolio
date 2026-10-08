@@ -10,6 +10,7 @@ import Certifications from "@/components/sections/Certifications";
 import Experience from "@/components/sections/Experience";
 import Achievements from "@/components/sections/Achievements";
 import Contact from "@/components/sections/Contact";
+import OrbitBackground from "@/components/ui/OrbitBackground";
 
 export default function Home() {
   // Global reveal-on-scroll observer
@@ -46,12 +47,16 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
-      <Skills />
-      <Work />
-      <Certifications />
-      <Experience />
-      <Achievements />
-      <Contact />
+      {/* ── ORBIT fixed background: visible from Skills section onward ── */}
+      <OrbitBackground />
+      <div className="relative z-10">
+        <Skills />
+        <Work />
+        <Certifications />
+        <Experience />
+        <Achievements />
+        <Contact />
+      </div>
     </main>
   );
 }

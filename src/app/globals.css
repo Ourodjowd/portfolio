@@ -14,6 +14,7 @@
 @layer base {
   :root {
     --paper: #f4f2ee;
+    --paper-glass: rgba(244,242,238,0.82);
     --card: #ffffff;
     --ink: #0d0d0d;
     --ink-2: #3a3a3a;

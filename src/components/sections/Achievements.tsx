@@ -82,7 +82,8 @@ export default function Achievements() {
     >
       <section
         id="achievements"
-        className="sticky top-0 h-[100svh] w-full overflow-hidden bg-[var(--paper)] px-[var(--gutter)] flex flex-col"
+        className="sticky top-0 h-[100svh] w-full overflow-hidden px-[var(--gutter)] flex flex-col"
+        style={{ background: 'var(--paper-glass)', backdropFilter: 'blur(2px)' }}
       >
         {/* Header */}
         <div className="pt-[clamp(48px,8vh,96px)] mb-8 flex justify-between items-end">

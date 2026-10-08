@@ -6,7 +6,8 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="relative w-full bg-white border-t border-b border-[var(--line)]"
+      className="relative w-full border-t border-b border-[var(--line)]"
+      style={{ background: 'var(--paper-glass)', backdropFilter: 'blur(2px)' }}
     >
       <div className="max-w-[1320px] mx-auto px-[var(--gutter)] py-[clamp(96px,14vh,160px)]">
         <div className="flex flex-col md:flex-row gap-16 md:gap-24">

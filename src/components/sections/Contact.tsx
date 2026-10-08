@@ -20,7 +20,8 @@ export default function Contact() {
     <>
       <section
         id="contact"
-        className="relative w-full px-[var(--gutter)] py-[clamp(96px,14vh,160px)] bg-[var(--paper)] overflow-hidden"
+        className="relative w-full px-[var(--gutter)] py-[clamp(96px,14vh,160px)] overflow-hidden"
+        style={{ background: 'var(--paper-glass)', backdropFilter: 'blur(2px)' }}
       >
         <div className="max-w-[1320px] mx-auto">
           <div className="text-sm font-[family-name:var(--font-mono)] text-[var(--mute)] mb-10">
@@ -137,7 +138,7 @@ export default function Contact() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full border-t border-[var(--line)] px-[var(--gutter)] py-8 bg-[var(--paper)]">
+      <footer className="w-full border-t border-[var(--line)] px-[var(--gutter)] py-8" style={{ background: 'var(--paper-glass)', backdropFilter: 'blur(2px)' }}>
         <div className="max-w-[1320px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[var(--mute)]">
           <span>
             © {new Date().getFullYear()} 
